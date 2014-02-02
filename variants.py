@@ -9,7 +9,8 @@ with open('./variants_custom.csv') as files:
 with open('./variants.csv') as files:
     csv_files.extend(csv.reader(files))
 
-address = '台北市大安區金華街187號東樓204室'
+#address = '台北市大安區金華街187號東樓204室'
+address = '台北市羅斯福路二段102號25樓'
 
 for a, b in csv_files:
     address = address.replace(a, b)
